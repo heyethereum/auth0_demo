@@ -66,22 +66,38 @@ let accounts = [
 function get_all_users() {
   return users;
 }
-function get_user_by_user_id(user_id) {
-  for (i = 0; i < users.length; i++) {
+/* function get_user_by_user_id(user_id) {
+  for (let i = 0; i < users.length; i++) {
     if (users[i].user_id == user_id) {
       return users[i];
     }
   }
+} */
+function get_user_by_user_id(user_id) {
+  for (let user of users) {
+    if (user.user_id == user_id) {
+      console.log(user.user_id);
+      return user;
+    }
+  }
 }
-
 function get_all_accounts() {
   return accounts;
 }
 
-function get_account_by_account_id(account_id) {
-  for (i = 0; i < accounts.length; i++) {
+/* function get_account_by_account_id(account_id) {
+  for (let i = 0; i < accounts.length; i++) {
     if (accounts[i].account_id == account_id) {
       return accounts[i];
+    }
+  }
+} */
+
+function get_account_by_account_id(account_id) {
+  for (let account of accounts) {
+    if (account.account_id == account_id) {
+      console.log(account.account_id);
+      return account;
     }
   }
 }
