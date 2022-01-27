@@ -1,0 +1,21 @@
+{
+  "name": "session2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon authdemo.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "express-openid-connect": "^2.5.2",
+    "git": "^0.1.5",
+    "mysql": "^2.18.1"
+  },
+  "description": ""
+}
