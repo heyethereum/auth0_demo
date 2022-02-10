@@ -73,5 +73,5 @@ app.post("/add_account", requiresAuth(), (request, response) => {
 const port = process.env.PORT || PORT;
 app.listen(port, () => {
   console.log(process.env.PORT);
-  console.log(`Listening on port ${PORT}`);
+  console.log(`Listening on port ${port}`);
 });

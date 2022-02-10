@@ -1,0 +1,1040 @@
+{
+	"info": {
+		"_postman_id": "52837f7a-2736-4cee-843e-fb498532dc88",
+		"name": "NUSbackendstub",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/user/all",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user",
+						"all"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user: all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"all"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "<integer>",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n    {\n        \"user_id\": 1,\n        \"first_name\": \"Fred\",\n        \"last_name\": \"Nerk\",\n        \"email\": \"fred@nerksville.com\",\n        \"phone\": \"+65 8765 4321\",\n        \"plan_id\": 1,\n        \"signup_date\": \"12-Aug-2021\"\n    },\n    {\n        \"user_id\": 2,\n        \"first_name\": \"Joe\",\n        \"last_name\": \"Bloggs\",\n        \"email\": \"joe@bloggsville.com\",\n        \"phone\": \"+65 1234 5678\",\n        \"plan_id\": 1,\n        \"signup_date\": \"13-Aug-2021\"\n    }\n]"
+				},
+				{
+					"name": "user_id=1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/by-uid?user_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"by-uid"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n    {\n        \"user_id\": 1,\n        \"first_name\": \"Fred\",\n        \"last_name\": \"Nerk\",\n        \"email\": \"fred@nerksville.com\",\n        \"phone\": \"+65 8765 4321\",\n        \"plan_id\": 1,\n        \"signup_date\": \"12-Aug-2021\"\n    }\n]"
+				},
+				{
+					"name": "user_id=\"1\"",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/by-uid?user_id=\"1\"",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"by-uid"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "\"1\""
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n    {\n        \"user_id\": 1,\n        \"first_name\": \"Fred\",\n        \"last_name\": \"Nerk\",\n        \"email\": \"fred@nerksville.com\",\n        \"phone\": \"+65 8765 4321\",\n        \"plan_id\": 1,\n        \"signup_date\": \"12-Aug-2021\"\n    }\n]"
+				},
+				{
+					"name": "user_id=2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/by-uid?user_id=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"by-uid"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n    {\n        \"user_id\": 2,\n        \"first_name\": \"Joe\",\n        \"last_name\": \"Bloggs\",\n        \"email\": \"joe@bloggsville.com\",\n        \"phone\": \"+65 1234 5678\",\n        \"plan_id\": 1,\n        \"signup_date\": \"13-Aug-2021\"\n    }\n]"
+				},
+				{
+					"name": "user_id=\"2\"",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/user/by-uid?user_id=\"2\"",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"by-uid"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "\"2\""
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n    {\n        \"user_id\": 2,\n        \"first_name\": \"Joe\",\n        \"last_name\": \"Bloggs\",\n        \"email\": \"joe@bloggsville.com\",\n        \"phone\": \"+65 1234 5678\",\n        \"plan_id\": 1,\n        \"signup_date\": \"13-Aug-2021\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "user/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 2,\r\n    \"first_name\": \"Joe\",\r\n    \"last_name\": \"Bloggs\",\r\n    \"email\": \"joe@bloggsville.com\",\r\n    \"phone\": \"+65 1234 5678\",\r\n    \"plan_id\": 1,\r\n    \"signup_date\": \"13-Aug-2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/user/add",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user/add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 2,\r\n    \"first_name\": \"Joe\",\r\n    \"last_name\": \"Bloggs\",\r\n    \"email\": \"joe@bloggsville.com\",\r\n    \"phone\": \"+65 1234 5678\",\r\n    \"plan_id\": 1,\r\n    \"signup_date\": \"13-Aug-2021\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/user/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user",
+								"add"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "text",
+					"header": null,
+					"cookie": [],
+					"body": "\"User created successfully!\""
+				}
+			]
+		},
+		{
+			"name": "plans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/plan?plan_id=3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"plan"
+					],
+					"query": [
+						{
+							"key": "plan_id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "plan: all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/plan/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"plan",
+								"all"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "null",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"plan_id\": \"1\",\r\n        \"plan_name\": \"Free\",\r\n        \"description\": \"Get started for free\",\r\n        \"price\": \"Free\",\r\n        \"features\": \"\"\r\n    },\r\n    {\r\n        \"plan_id\": \"2\",\r\n        \"plan_name\": \"Pro\",\r\n        \"description\": \"For Power Users\",\r\n        \"price\": \"$10/month\",\r\n        \"features\": \"\"\r\n    },\r\n    {\r\n        \"plan_id\": \"3\",\r\n        \"plan_name\": \"Business\",\r\n        \"description\": \"For businesses and teams\",\r\n        \"price\": \"Contact Sales\",\r\n        \"features\": \"\"\r\n    }\r\n]"
+				},
+				{
+					"name": "plan_id=1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/plan/by-pid?plan_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"plan",
+								"by-pid"
+							],
+							"query": [
+								{
+									"key": "plan_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 06:39:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=d583cf9d8d2b4ba2"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=3f1dabacf83cb0bb"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1629268803"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"21d-bSMMQexDLUDlazK0VsSFPtt5xIM\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"plan_id\": \"1\",\n        \"plan_name\": \"Free\",\n        \"description\": \"Get started for free\",\n        \"price\": \"Free\",\n        \"features\": \"\"\n    }\n]"
+				},
+				{
+					"name": "plan_id=2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/plan/by-pid?plan_id=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"plan",
+								"by-pid"
+							],
+							"query": [
+								{
+									"key": "plan_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"plan_id\": \"2\",\r\n        \"plan_name\": \"Pro\",\r\n        \"description\": \"For Power Users\",\r\n        \"price\": \"$10/month\",\r\n        \"features\": \"\"\r\n    }\r\n]"
+				},
+				{
+					"name": "plan_id=3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/plan/by-pid?plan_id=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"plan",
+								"by-pid"
+							],
+							"query": [
+								{
+									"key": "plan_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"plan_id\": \"3\",\r\n        \"plan_name\": \"Business\",\r\n        \"description\": \"For businesses and teams\",\r\n        \"price\": \"Contact Sales\",\r\n        \"features\": \"\"\r\n    }\r\n]"
+				}
+			]
+		},
+		{
+			"name": "account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/account",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "account: all:Admin",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/account/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"account",
+								"all"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "<integer>",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"account_id\": 1,\r\n        \"user_id\": 1,\r\n        \"account_name\": \"Fred Nerk Cheque\",\r\n        \"account_type\": \"Cheque\",\r\n        \"balance\": 1000.00,\r\n        \"credit_limit\": 0\r\n    },\r\n    {\r\n        \"account_id\": 2,\r\n        \"user_id\": 1,\r\n        \"account_name\": \"Fred Nerk Savings\",\r\n        \"account_type\": \"Savings\",\r\n        \"balance\": 10000.00,\r\n        \"credit_limit\": 0\r\n    },\r\n    {\r\n        \"account_id\": 3,\r\n        \"user_id\": 1,\r\n        \"account_name\": \"Fred Nerk Credit Card\",\r\n        \"account_type\": \"Credit\",\r\n        \"balance\": -243.00,\r\n        \"credit_limit\": 10000.00\r\n    },\r\n    {\r\n        \"account_id\": 4,\r\n        \"user_id\": 2,\r\n        \"account_name\": \"Joe Bloggs Cheque\",\r\n        \"account_type\": \"Cheque\",\r\n        \"balance\": 1400.00,\r\n        \"credit_limit\": 0\r\n    },\r\n    {\r\n        \"account_id\": 5,\r\n        \"user_id\": 2,\r\n        \"account_name\": \"Joe Bloggs Savings\",\r\n        \"account_type\": \"Savings\",\r\n        \"balance\": 9000.00,\r\n        \"credit_limit\": 0\r\n    },  \r\n    {\r\n        \"account_id\": 6,\r\n        \"user_id\": 2,\r\n        \"account_name\": \"Joe Bloggs Credit Card\",\r\n        \"account_type\": \"Credit\",\r\n        \"balance\": -455.00,\r\n        \"credit_limit\": 20000\r\n    },\r\n]"
+				},
+				{
+					"name": "account: all for user_id=1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/account/by-uid?user_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"account",
+								"by-uid"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"account_id\": 1,\r\n        \"user_id\": 1,\r\n        \"account_name\": \"Fred Nerk Cheque\",\r\n        \"account_type\": \"Cheque\",\r\n        \"balance\": 1000.00,\r\n        \"credit_limit\": 0\r\n    },\r\n    {\r\n        \"account_id\": 2,\r\n        \"user_id\": 1,\r\n        \"account_name\": \"Fred Nerk Savings\",\r\n        \"account_type\": \"Savings\",\r\n        \"balance\": 10000.00,\r\n        \"credit_limit\": 0\r\n    },\r\n    {\r\n        \"account_id\": 3,\r\n        \"user_id\": 1,\r\n        \"account_name\": \"Fred Nerk Credit Card\",\r\n        \"account_type\": \"Credit\",\r\n        \"balance\": -243.00,\r\n        \"credit_limit\": 10000.00\r\n    }\r\n]"
+				},
+				{
+					"name": "account: all for user_id=2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/account/by-uid?user_id=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"account",
+								"by-uid"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"account_id\": 4,\r\n        \"user_id\": 2,\r\n        \"account_name\": \"Joe Bloggs Cheque\",\r\n        \"account_type\": \"Cheque\",\r\n        \"balance\": 1400.00,\r\n        \"credit_limit\": 0\r\n    },\r\n    {\r\n        \"account_id\": 5,\r\n        \"user_id\": 2,\r\n        \"account_name\": \"Joe Bloggs Savings\",\r\n        \"account_type\": \"Savings\",\r\n        \"balance\": 9000.00,\r\n        \"credit_limit\": 0\r\n    },  \r\n    {\r\n        \"account_id\": 6,\r\n        \"user_id\": 2,\r\n        \"account_name\": \"Joe Bloggs Credit Card\",\r\n        \"account_type\": \"Credit\",\r\n        \"balance\": -455.00,\r\n        \"credit_limit\": 20000\r\n    },\r\n]"
+				},
+				{
+					"name": "account: for account_id=1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/account/by-aid?account_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"account",
+								"by-aid"
+							],
+							"query": [
+								{
+									"key": "account_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": " [\r\n    {\r\n        \"account_id\": 1,\r\n        \"user_id\": 1,\r\n        \"account_name\": \"Fred Nerk Cheque\",\r\n        \"account_type\": \"Cheque\",\r\n        \"balance\": 1000.00,\r\n        \"credit_limit\": 0\r\n    }\r\n ]"
+				}
+			]
+		},
+		{
+			"name": "account/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account_id\": 4,\r\n    \"user_id\": 2,\r\n    \"account_name\": \"Joe Bloggs Cheque\",\r\n    \"account_type\": \"Cheque\",\r\n    \"balance\": 1400.00,\r\n    \"credit_limit\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/account/add",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"account",
+						"add"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "<integer>",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "account/add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account_id\": 4,\r\n    \"user_id\": 2,\r\n    \"account_name\": \"Joe Bloggs Cheque\",\r\n    \"account_type\": \"Cheque\",\r\n    \"balance\": 1400.00,\r\n    \"credit_limit\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/account/add?user_id=<integer>",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"account",
+								"add"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "<integer>"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "\"Account created successfully\""
+				}
+			]
+		},
+		{
+			"name": "update balance",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"account_id\": 1,\r\n    \"balance\": 200.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/account/update-balance",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"account",
+						"update-balance"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update balance",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"account_id\": 1,\r\n    \"balance\": 200.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/account/update-balance?account_id=1&balance=200.00",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"account",
+								"update-balance"
+							],
+							"query": [
+								{
+									"key": "account_id",
+									"value": "1"
+								},
+								{
+									"key": "balance",
+									"value": "200.00"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "\"Balance updated successfully!\""
+				}
+			]
+		},
+		{
+			"name": "account/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/account/delete?account_id=5400",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"account",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "account_id",
+							"value": "5400"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "account/delete?account_id=1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/account/delete?account_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"account",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "account_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "\"Account deleted successfully!\""
+				}
+			]
+		},
+		{
+			"name": "transaction/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/transaction/by-tid?transaction_id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"transaction",
+						"by-tid"
+					],
+					"query": [
+						{
+							"key": "transaction_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "transactions: all by user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transaction/all",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaction",
+								"all"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"transaction_id\": 1,\r\n        \"transaction_date\": \"2020-08-27T00:00:00.000Z\",\r\n        \"category\": \"groceries\",\r\n        \"account_id\": 3,\r\n        \"amount\": -71.59,\r\n        \"merchant\": \"NTUC\"\r\n    },\r\n    {\r\n        \"transaction_id\": 3,\r\n        \"transaction_date\": \"2020-08-20T00:00:00.000Z\",\r\n        \"category\": \"clothing\",\r\n        \"account_id\": 3,\r\n        \"amount\": -387.53,\r\n        \"merchant\": \"Zara\"\r\n    },\r\n    {\r\n        \"transaction_id\": 4,\r\n        \"transaction_date\": \"2020-08-26T00:00:00.000Z\",\r\n        \"category\": \"groceries\",\r\n        \"account_id\": 3,\r\n        \"amount\": -430.68,\r\n        \"merchant\": \"NTUC\"\r\n    },\r\n    {\r\n        \"transaction_id\": 5,\r\n        \"transaction_date\": \"2020-08-11T00:00:00.000Z\",\r\n        \"category\": \"insurance\",\r\n        \"account_id\": 1,\r\n        \"amount\": -434,\r\n        \"merchant\": \"AXA\"\r\n    },\r\n    {\r\n        \"transaction_id\": 6,\r\n        \"transaction_date\": \"2020-09-01T00:00:00.000Z\",\r\n        \"category\": \"utilities\",\r\n        \"account_id\": 1,\r\n        \"amount\": -228.54,\r\n        \"merchant\": \"PUB\"\r\n    },\r\n    {\r\n        \"transaction_id\": 7,\r\n        \"transaction_date\": \"2020-09-04T00:00:00.000Z\",\r\n        \"category\": \"recreation\",\r\n        \"account_id\": 3,\r\n        \"amount\": -402.99,\r\n        \"merchant\": \"Sentosa\"\r\n    },\r\n    {\r\n        \"transaction_id\": 8,\r\n        \"transaction_date\": \"2020-08-16T00:00:00.000Z\",\r\n        \"category\": \"groceries\",\r\n        \"account_id\": 3,\r\n        \"amount\": -196.63,\r\n        \"merchant\": \"NTUC\"\r\n    }\r\n]"
+				}
+			]
+		},
+		{
+			"name": "transaction: by transaction_id Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/transaction/by-tid?transaction_id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"transaction",
+						"by-tid"
+					],
+					"query": [
+						{
+							"key": "transaction_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "transactions: all by user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transactions/by-tid?transaction_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transactions",
+								"by-tid"
+							],
+							"query": [
+								{
+									"key": "transaction_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"transaction_id\": 1,\r\n        \"transaction_date\": \"03/09/2021\",\r\n        \"account_id\": 3,\r\n        \"category\": \"Groceries\",\r\n        \"merchant\": \"NTUC FairPrice\",\r\n        \"amount\": 34.50\r\n    } \r\n]"
+				}
+			]
+		},
+		{
+			"name": "transaction: by account_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/transaction/by-aid?account_id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"transaction",
+						"by-aid"
+					],
+					"query": [
+						{
+							"key": "account_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "transactions: all by user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transactions/by-aid?account_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transactions",
+								"by-aid"
+							],
+							"query": [
+								{
+									"key": "account_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"transaction_id\": 1,\r\n        \"transaction_date\": \"03/09/2021\",\r\n        \"account_id\": 3,\r\n        \"category\": \"Groceries\",\r\n        \"merchant\": \"NTUC FairPrice\",\r\n        \"amount\": 34.50\r\n    } \r\n]"
+				}
+			]
+		},
+		{
+			"name": "transaction/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/transaction/delete?transaction_id=1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"transaction",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "transaction_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "transactions: all by user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/transaction/delete?transaction_id=1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaction",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "transaction_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "text",
+					"header": null,
+					"cookie": [],
+					"body": "\"Transaction deleted successfully!\""
+				}
+			]
+		},
+		{
+			"name": "transaction/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"user_id\": 1,\r\n        \"transaction_id\": 1,\r\n        \"transaction_date\": \"03/09/2021\",\r\n        \"account_id\": 3,\r\n        \"category\": \"Groceries\",\r\n        \"merchant\": \"NTUC FairPrice\",\r\n        \"amount\": 34.50\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/transaction/add",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"transaction",
+						"add"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "transaction/add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"user_id\": 1,\r\n        \"transaction_id\": 1,\r\n        \"transaction_date\": \"03/09/2021\",\r\n        \"account_id\": 3,\r\n        \"category\": \"Groceries\",\r\n        \"merchant\": \"NTUC FairPrice\",\r\n        \"amount\": 34.50\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/transaction/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"transaction",
+								"add"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "\"Transaction added successfully\""
+				}
+			]
+		}
+	]
+}
