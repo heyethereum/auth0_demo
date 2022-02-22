@@ -22,7 +22,8 @@
     "express": "^4.17.2",
     "express-openid-connect": "^2.6.0",
     "git": "^0.1.5",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "web3": "^1.7.0"
   },
   "description": ""
 }

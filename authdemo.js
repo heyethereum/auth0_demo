@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 
 // req.isAuthenticated is provided from the auth router
 app.get("/", (request, response) => {
-  response.send(request.oidc.isAuthenticated() ? "Logged in" : "Logged out");
+  response.send(request.oidc.isAuthenticated() ? "<h1>Logged in</h1>" : "<h1>Logged out</h1>");
 });
 
 app.get("/profile", requiresAuth(), (request, response) => {
